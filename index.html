@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="assets/script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="logo">hCicillini</h1>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/imagens/x.png" alt=""></a>
+        <nav class="navbar">
+            <ul class="nav_list" onclick="closeNav()">
+                <li><a href="#home0">Home</a></li>
+                <li><a href="#sobre0">Sobre</a></li>
+                <li><a href="#skills0">Skills</a></li>
+                <li><a href="#works0">Works</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <button class="nav-button" onclick="openNav()">
+            <img src="assets/imagens/menu.png" alt="">
+        </button>
+    </header>
+    <div id="home0"></div>
+    <main>
+        <section id="home">
+            <div>
+                <h1>Olá,<br>Eu sou o <span>Hugo</span><br>Web Developer</h1>
+                <button><a href="mailto:hugo.cicillini@hotmail.com">Contato</a></button>
+
+                <div class="links_media">
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/imagens/linkedin.png" alt=""></a>
+                    <a href="https://www.github.com/hugocicillini/" target="_blank"><img src="assets/imagens/github.png" alt=""></a>
+                    <a href="https://www.instagram.com/hugocicillini" target="_blank"><img src="assets/imagens/instagram.png" alt=""></a>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/imagens/perfil.png" alt="perfil">
+            </div>
+        </section>
+        <div id="sobre0"></div>
+        <section id="sobre">
+            <h1><span>Sobre</span></h1>
+            <div class="about_perfil">
+                <img src="assets/imagens/perfil2.png" alt="perfil2">
+                <div>
+                    <h2>Eu sou o Hugo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas, voluptates quo corporis numquam quisquam dolorum nostrum eaque quam nemo consectetur! Rem, enim facere. Nobis natus autem quaerat minus quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto eaque quo temporibus eius cumque debitis reiciendis quisquam aut! Dolorem, magni repudiandae et obcaecati id neque sequi explicabo pariatur reiciendis!</p>
+                </div>
+            </div>
+        </section>
+        <div id="skills0"></div>
+        <section id="skills">
+            <h1><span>Skills</span></h1>
+            <div class="skills-progress">
+                <div>
+                    <h2>Habilidades Profissionais</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias iure eum minus ducimus repellat voluptates? Nam iure, pariatur ea quidem expedita voluptatem eveniet aliquid autem cupiditate corrupti ipsa saepe.</p>
+                    
+                    <div class="percent">
+                        <p><span>HTML <i class='bx bxl-html5'></i></span>80%</p>
+                        <div class="progress">
+                            <div class="html"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p><span>CSS <i class='bx bxl-css3'></i></span>75%</p>
+                        <div class="progress">
+                            <div class="css"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p><span>JavaScript <i class='bx bxl-javascript' ></i></span>60%</p>
+                        <div class="progress">
+                            <div class="js"></div>
+                        </div>
+                    </div>
+                    <div class="percent">
+                        <p><span>Vue.js <i class='bx bxl-javascript' ></i></span>60%</p>
+                        <div class="progress">
+                            <div class="vue"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-progress">
+                    <div>
+                        <h2>Habilidades Linguísticas</h2>
+                        <p>Aprendendo sozinho, em casa, através de muita dedicação e disciplina, obtive (e venho obtendo) um amplo conhecimento em INGLÊS. Séries, filmes e músicas foram e são os meus maiores aliados!</p>
+                        
+                        <div class="percent">
+                            <p><span>Entendimento <i class='bx bxs-book'></i></span>90%</p>
+                            <div class="progress">
+                                <div class="entend"></div>
+                            </div>
+                        </div>
+                        <div class="percent">
+                            <p><span>Escrita <i class='bx bxs-pencil'></i></span>85%</p>
+                            <div class="progress">
+                                <div class="escrita"></div>
+                            </div>
+                        </div>
+                        <div class="percent">
+                            <p><span>Pronunciação <i class='bx bxs-chat'></i></span>90%</p>
+                            <div class="progress">
+                                <div class="pronun"></div>
+                            </div>
+                        </div>
+                        <div class="percent">
+                            <p><span>Comunicação <i class='bx bxs-conversation'></i></span>70%</p>
+                            <div class="progress">
+                                <div class="comuni"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <div id="works0"></div>
+        <section id="works">
+            <h1><span>Works</span></h1>
+            <div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p><span>hCicillini</span></p>
+            <p>&copy; <a href="https://github.com/hugocicillini">hugocicillini</a>  copyright all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
