@@ -9,6 +9,10 @@
     list-style: none;
 }
 
+.links_media, #sobre, #skills, #works {
+    visibility: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1064,8 +1068,8 @@ footer a:hover {
     }
 
     img[src="assets/imagens/perfil.png"] {
-        width: 200px;
-        height: 266.6px;
+        width: 225px;
+        height: 300px;
         border-radius: 150px 150px 150px 50px;
     }
 

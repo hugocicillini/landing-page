@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.sr = ScrollReveal({ reset: true });
+        </script>
     <script src="assets/script.js"></script>
     <title>Portfolio</title>
 </head>
@@ -141,5 +145,21 @@
             <p>&copy; <a href="https://github.com/hugocicillini">hugocicillini</a>  copyright all rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal('.links_media', {duration: 1000});
+        sr.reveal('#skills', {
+            rotate: {x:10, y:10, z:0},
+            duration: 1000,
+            });
+        sr.reveal('#sobre', {
+            rotate: {x:10, y:10, z:0},
+            duration: 1000,
+            });
+        sr.reveal('#works', {
+            rotate: {x:10, y:10, z:0},
+            duration: 1000});
+    </script>
 </body>
 </html>
