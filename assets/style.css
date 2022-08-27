@@ -51,7 +51,7 @@ header div:nth-child(1) {
     display: none;
 }
 
-button {
+.nav-button {
     display: none;
 }
 
@@ -335,7 +335,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:382px) and (max-width:500px)  {
     body {
         margin: 0;
         border-radius: 0;
@@ -412,16 +412,11 @@ footer a:hover {
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         font-size: 2rem;
-        gap: 40px;
         font-family: 'Roboto', sans-serif;
-        height: 85vh;
-    }
-
-    #home > div {
-        margin-top: 0px;
+        height: 95vh;
     }
 
     #home h1 span {
@@ -431,8 +426,10 @@ footer a:hover {
         font-size: 2.5rem;
     }
 
-    header div {
-        margin-left: 0;
+    #home > div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
     }
 
     img[src="assets/imagens/perfil.png"] {
@@ -443,7 +440,7 @@ footer a:hover {
 
     #sobre {
         border-radius: 0;
-        height: 120vh;
+        height: 95vh;
     }
     
     .about_perfil {
@@ -475,7 +472,7 @@ footer a:hover {
     #skills {
         margin-top: 100px;
         border-radius: 0;
-        height: 130vh;
+        height: 95vh;
     }
     
     #skills h1 {
@@ -509,4 +506,598 @@ footer a:hover {
         padding: 50px;
     }
 
+}
+
+@media screen and (max-width:380px){
+    body {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .nav-button {
+        display: block;
+        border: 0;
+        margin: 8px;
+        cursor: pointer;
+    }
+    
+    .nav-button img {
+        background-color: white;
+        display: flex;
+    }
+
+    .overlay {
+        display: block;
+        width: 0%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.767);
+        z-index: 9;
+        position: fixed;
+        right: -8rem;
+        top: 0;
+        overflow-x: hidden;
+        transition: all .5s;
+        border: 1px solid black;
+    }
+
+    .closebtn {
+        padding: 10px;
+        display: block;
+    }
+
+    .closebtn img {
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    .navbar {
+        color: black;
+        font-size: 2rem;
+        font-variant: small-caps;
+        margin-top: 3rem;
+    }
+    
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        width: 100vw;
+        background-color: #fff;
+        display: flex;
+        height: 4rem;
+        align-items: center;
+    }
+
+    header div:nth-child(1){
+        margin-left: 1rem;
+    }
+
+    #home {
+        margin-top: 5rem;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+    }
+
+    #home h1 span {
+        text-shadow: none;
+        font-family: 'Roboto';
+        font-variant: normal;
+        font-size: 2.5rem;
+    }
+
+    #home > div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    img[src="assets/imagens/perfil.png"] {
+        width: 200px;
+        height: 266.6px;
+        border-radius: 150px 150px 150px 50px;
+    }
+
+    #sobre {
+        border-radius: 0;
+        height: 95vh;
+    }
+    
+    .about_perfil {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    } 
+    
+    .about_perfil div p {
+        width: 90vw;
+    }
+    
+    img[src="assets/imagens/perfil2.png"] {
+        border-radius: 100px 10px 10px 10px;
+        width: 300px;
+        height: 300px;
+        border: 10px solid black;
+        padding: 3px;
+    }
+
+    h1 span {
+        color: #CA8179;
+        font-size: 2rem;
+        font-variant: small-caps;
+        border-bottom: 5px solid #CA8179;
+    }
+
+    #skills {
+        margin-top: 100px;
+        border-radius: 0;
+        height: 100vh;
+    }
+    
+    #skills h1 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .skills-progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .skills-progress > div{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #works {
+        margin-top: 100px;
+        border-radius: 0;
+        background-color: white;
+        height: 100vh;
+    }
+    
+    #works h1 {
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+
+@media screen and (min-width:502px) and (max-width:700px){
+    body {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .nav-button {
+        display: block;
+        border: 0;
+        margin: 8px;
+        cursor: pointer;
+    }
+    
+    .nav-button img {
+        background-color: white;
+        display: flex;
+    }
+
+    .overlay {
+        display: block;
+        width: 0%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.767);
+        z-index: 9;
+        position: fixed;
+        right: -8rem;
+        top: 0;
+        overflow-x: hidden;
+        transition: all .5s;
+        border: 1px solid black;
+    }
+
+    .closebtn {
+        padding: 10px;
+        display: block;
+    }
+
+    .closebtn img {
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    .navbar {
+        color: black;
+        font-size: 2rem;
+        font-variant: small-caps;
+        margin-top: 3rem;
+    }
+    
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        width: 100vw;
+        background-color: #fff;
+        display: flex;
+        height: 4rem;
+        align-items: center;
+    }
+
+    header div:nth-child(1){
+        margin-left: 1rem;
+    }
+
+    #home {
+        margin-top: 5rem;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        height: 95vh;
+    }
+
+    #home div h1{
+        order: 0;
+    }
+
+    #home div button{
+        order: 0;
+    }
+
+    #home h1 span {
+        text-shadow: none;
+        font-family: 'Roboto';
+        font-variant: normal;
+        font-size: 2.5rem;
+    }
+
+    #home > div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    img[src="assets/imagens/perfil.png"] {
+        width: 200px;
+        height: 266.6px;
+        border-radius: 150px 150px 150px 50px;
+    }
+
+    #sobre {
+        border-radius: 0;
+        height: 85vh;
+    }
+    
+    .about_perfil {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    } 
+    
+    .about_perfil div p {
+        width: 90vw;
+    }
+    
+    img[src="assets/imagens/perfil2.png"] {
+        border-radius: 100px 10px 10px 10px;
+        width: 300px;
+        height: 300px;
+        border: 10px solid black;
+        padding: 3px;
+    }
+
+    h1 span {
+        color: #CA8179;
+        font-size: 2rem;
+        font-variant: small-caps;
+        border-bottom: 5px solid #CA8179;
+    }
+
+    #skills {
+        margin-top: 100px;
+        border-radius: 0;
+        height: 90vh;
+    }
+    
+    #skills h1 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .skills-progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .skills-progress > div{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #works {
+        margin-top: 100px;
+        border-radius: 0;
+        background-color: white;
+        height: 100vh;
+    }
+    
+    #works h1 {
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width:702px) and (max-width:1000px){
+    body {
+        margin: 3rem 6rem 0rem 6rem;
+        background-color: #F3F8FC;   
+        border-radius: 20px;
+    }
+
+    .nav-button {
+        display: block;
+        border: 0;
+        margin: 8px;
+        cursor: pointer;
+    }
+    
+    .nav-button img {
+        background-color: white;
+        display: flex;
+    }
+
+    .overlay {
+        display: block;
+        width: 0%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.767);
+        z-index: 9;
+        position: fixed;
+        right: -8rem;
+        top: 0;
+        overflow-x: hidden;
+        transition: all .5s;
+        border: 1px solid black;
+    }
+
+    .closebtn {
+        padding: 10px;
+        display: block;
+    }
+
+    .closebtn img {
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    .navbar {
+        color: black;
+        font-size: 2rem;
+        font-variant: small-caps;
+        margin-top: 3rem;
+    }
+    
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        width: calc(100vw - 12rem);
+        background-color: #fff;
+        display: flex;
+        height: 4rem;
+        align-items: center;
+    }
+
+    header div:nth-child(1){
+        margin-left: 1rem;
+    }
+
+    #home {
+        margin-top: 5rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        height: 95vh;
+    }
+
+    #home div h1{
+        order: 0;
+    }
+
+    #home div button{
+        order: 0;
+    }
+
+    #home h1 span {
+        text-shadow: none;
+        font-family: 'Roboto';
+        font-variant: normal;
+        font-size: 2.5rem;
+    }
+
+    #home > div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    img[src="assets/imagens/perfil.png"] {
+        width: 200px;
+        height: 266.6px;
+        border-radius: 150px 150px 150px 50px;
+    }
+
+    #sobre {
+        border-radius: 10px;
+        height: 85vh;
+    }
+    
+    .about_perfil {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    } 
+    
+    .about_perfil div p {
+        width: calc(90vw - 12rem);
+    }
+    
+    img[src="assets/imagens/perfil2.png"] {
+        border-radius: 100px 10px 10px 10px;
+        width: 300px;
+        height: 300px;
+        border: 10px solid black;
+        padding: 3px;
+    }
+
+    h1 span {
+        color: #CA8179;
+        font-size: 2rem;
+        font-variant: small-caps;
+        border-bottom: 5px solid #CA8179;
+    }
+
+    #skills {
+        border-radius: 10px;
+        height: 90vh;
+    }
+
+    .skills-progress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .skills-progress > div{
+        width: calc(90vw - 12rem);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #works {
+        margin-top: 100px;
+        border-radius: 10px 10px 0 0;
+        background-color: white;
+        height: 100vh;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1500px){
+    body {
+        margin: 3rem 6rem 0rem 6rem;
+        background-color: #F3F8FC;   
+        border-radius: 20px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        width: calc(100vw - 12rem);
+        background-color: #fff;
+        display: flex;
+        height: 4rem;
+        align-items: center;
+    }
+
+    header div:nth-child(1){
+        margin-left: 1rem;
+    }
+
+    #home {
+        font-size: 2.5rem;
+    }
+
+    #home h1 span {
+        text-shadow: none;
+        font-family: 'Roboto';
+        font-variant: normal;
+        font-size: 2.5rem;
+    }
+
+    img[src="assets/imagens/perfil.png"] {
+        width: 200px;
+        height: 266.6px;
+        border-radius: 150px 150px 150px 50px;
+    }
+
+    #sobre {
+        border-radius: 10px;
+        height: 60vh;
+    }
+    
+    img[src="assets/imagens/perfil2.png"] {
+        border-radius: 100px 10px 10px 10px;
+        width: 300px;
+        height: 300px;
+        border: 10px solid black;
+        padding: 3px;
+    }
+
+    h1 span {
+        color: #CA8179;
+        font-size: 2rem;
+        font-variant: small-caps;
+        border-bottom: 5px solid #CA8179;
+    }
+
+    #skills {
+        border-radius: 10px;
+        height: 70vh;
+    }
+
+    #works {
+        margin-top: 100px;
+        border-radius: 10px 10px 0 0;
+        background-color: white;
+        height: 100vh;
+    }
 }
