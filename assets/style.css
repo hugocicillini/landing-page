@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
 
 * {
     padding: 0;
@@ -20,28 +21,20 @@ html {
 body {
     margin: 3rem 15rem 0rem 15rem;
     background-color: #F3F8FC;   
-    border-radius: 20px;
 }
 
 header {
     position: fixed;
     top: 0;
-    margin: 0;
+    z-index: 9;
     width: calc(100vw - 31rem);
     background-color: #fff;
-    display: flex;
     height: 4rem;
+    display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
-}
-
-.overlay{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
 }
 
 header div:nth-child(1) {
@@ -49,6 +42,13 @@ header div:nth-child(1) {
     border-radius: 10px 10px 10px 0;
     display: block;
     border: 2px solid black;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
 }
 
 .closebtn {
@@ -68,7 +68,6 @@ header div:nth-child(1) {
     display: flex;
     flex-direction: row;
     margin-right: 3rem;
-
 }
 
 .nav_list li a {
@@ -84,11 +83,13 @@ header div:nth-child(1) {
 #home {
     background: url(imagens/casa.png) no-repeat right 2rem bottom 2rem;
     margin-top: calc(100px + 4rem);
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     font-size: 3.5rem;
+    font-family: 'Anek Telugu', sans-serif;
     background-color: white;
     height: 75vh;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
@@ -98,34 +99,28 @@ header div:nth-child(1) {
     text-shadow: 1px 1px 10px black;
     color: #CA8179;
     font-size: 4rem;
-    border-radius: 10px 10px 10px 0;
+    border-radius: 10px 10px 10px 0px;
     border: 2px solid transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Anek Telugu', sans-serif;
+    font-variant: normal;
 } 
 
 #home span:hover {
-    transition: ease-in-out .5s;
+    transition: ease-in-out .7s;
     border-radius: 10px 10px 10px 0;
     border: 2px solid black;
     cursor: pointer;
 }
 
-#home > div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
 #home div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    align-items: flex-start;
+    gap: 30px;
 }
 
 #home button {
     padding: 1rem;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid black;
     width: 10rem;
     background-color: #000000;
     border-radius: 10px;
@@ -145,8 +140,8 @@ header div:nth-child(1) {
 img[src="assets/imagens/perfil.png"] {
     width: 300px;
     height: 400px;
-    border-radius: 150px 150px 150px 50px;
-    border: 10px solid black;
+    border-radius: 125px 125px 125px 25px;
+    border: 2px dashed black;
     padding: 3px;
 }
 
@@ -158,7 +153,7 @@ img[src="assets/imagens/perfil.png"] {
     background: url(imagens/do-utilizador.png) no-repeat right 2rem bottom 2rem;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
     margin-top: 100px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     background-color: white;
     height: 75vh;
 }
@@ -182,14 +177,16 @@ img[src="assets/imagens/perfil.png"] {
 }
 
 .about_perfil div p {
+    text-indent: 2rem;
+    text-align: justify;
     width: 30vw;
 }
 
 img[src="assets/imagens/perfil2.png"] {
-    border-radius: 100px 10px 10px 10px;
+    border-radius: 125px 125px 125px 25px;
+    border: 2px solid black;
     width: 400px;
     height: 400px;
-    border: 10px solid black;
     padding: 3px;
 }
 
@@ -197,13 +194,15 @@ h1 span {
     color: #CA8179;
     font-size: 3rem;
     border-bottom: 5px solid #CA8179;
+    font-family: 'Anek Telugu', sans-serif;
+    font-variant: small-caps;
 }
 
 #skills {
     background: url(imagens/lista.png) no-repeat right 2rem bottom 2rem;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
     margin-top: 100px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     background-color: white;
     height: 75vh;
 }
@@ -307,7 +306,8 @@ h1 span {
 
 footer {
     background-color: #CA8179 ;
-    height: 25vh;
+    height: 100%;
+
 }
 
 footer div {
@@ -318,7 +318,7 @@ footer div {
 }
 
 footer div p:nth-child(1) {
-    margin: 20px;
+    margin-top: 3rem;
     border: 2px solid black;
     font-family: 'Roboto', sans-serif;
     border-radius: 10px 10px 10px 0;
@@ -330,7 +330,6 @@ footer div p span {
     margin-left: 3rem;
 }
 
-
 footer a {
     color: black;
 }
@@ -339,7 +338,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (min-width:382px) and (max-width:500px){
+@media screen and (max-width: 1000px) {
     body {
         margin: 0;
         border-radius: 0;
@@ -356,7 +355,7 @@ footer a:hover {
         background-color: white;
         display: flex;
     }
-
+    
     .overlay {
         display: block;
         width: 0%;
@@ -397,14 +396,8 @@ footer a:hover {
     }
 
     header {
-        position: fixed;
-        top: 0;
-        margin: 0;
         width: 100vw;
-        background-color: #fff;
-        display: flex;
         height: 4rem;
-        align-items: center;
     }
 
     header div:nth-child(1){
@@ -414,626 +407,106 @@ footer a:hover {
     #home {
         margin-top: 5rem;
         border-radius: 0;
-        display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        justify-content: flex-start;
         font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        height: 95vh;
     }
 
     #home h1 span {
         text-shadow: none;
-        font-family: 'Roboto';
+        font-family: 'Anek Telugu', sans-serif;
         font-variant: normal;
         font-size: 2.5rem;
     }
 
     #home > div {
-        display: flex;
-        flex-direction: column;
         margin-top: 2rem;
     }
 
     img[src="assets/imagens/perfil.png"] {
         width: 200px;
         height: 266.6px;
-        border-radius: 150px 150px 150px 50px;
     }
 
     #sobre {
         border-radius: 0;
-        height: 95vh;
+    }
+
+    img[src="assets/imagens/perfil2.png"] {
+        width: 300px;
+        height: 300px;
     }
     
     .about_perfil {
-        display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         gap: 40px;
     } 
-    
-    .about_perfil div p {
-        width: 90vw;
-    }
-    
-    img[src="assets/imagens/perfil2.png"] {
-        border-radius: 100px 10px 10px 10px;
-        width: 300px;
-        height: 300px;
-        border: 10px solid black;
-        padding: 3px;
-    }
 
-    h1 span {
-        color: #CA8179;
-        font-size: 2rem;
-        font-variant: small-caps;
-        border-bottom: 5px solid #CA8179;
+    .about_perfil div p {
+        width: 85vw;
     }
 
     #skills {
-        margin-top: 100px;
         border-radius: 0;
-        height: 95vh;
-    }
-    
-    #skills h1 {
-        text-align: center;
-        padding: 50px;
-    }
-
-    .skills-progress {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
     }
     
     .skills-progress > div{
         width: 90vw;
-        display: flex;
-        flex-direction: column;
         gap: 10px;
     }
 
+    .skills-progress {
+        flex-direction: column;
+        gap: 40px;
+    }
+
     #works {
-        margin-top: 100px;
-        border-radius: 0;
-        background-color: white;
-        height: 100vh;
-    }
-    
-    #works h1 {
-        text-align: center;
-        padding: 50px;
-    }
-
-}
-
-@media screen and (max-width:380px){
-    body {
-        margin: 0;
         border-radius: 0;
     }
 
-    .nav-button {
-        display: block;
-        border: 0;
-        margin: 8px;
-        cursor: pointer;
-    }
-    
-    .nav-button img {
-        background-color: white;
-        display: flex;
-    }
-
-    .overlay {
-        display: block;
-        width: 0%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.767);
-        z-index: 9;
-        position: fixed;
-        right: -8rem;
-        top: 0;
-        overflow-x: hidden;
-        transition: all .5s;
-        border: 1px solid black;
-    }
-
-    .closebtn {
-        padding: 10px;
-        display: block;
-    }
-
-    .closebtn img {
-        width: 30px;
-        height: 30px;
-        border: 2px solid black;
-        border-radius: 20px;
-    }
-    
-    .navbar {
-        color: black;
+    h1 span {
         font-size: 2rem;
-        font-variant: small-caps;
-        margin-top: 3rem;
-    }
-    
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
     }
 
-    header {
-        position: fixed;
-        top: 0;
-        margin: 0;
-        width: 100vw;
-        background-color: #fff;
-        display: flex;
-        height: 4rem;
-        align-items: center;
-    }
-
-    header div:nth-child(1){
-        margin-left: 1rem;
-    }
-
-    #home {
-        margin-top: 5rem;
-        border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        height: 100vh;
-    }
-
-    #home h1 span {
-        text-shadow: none;
-        font-family: 'Roboto';
-        font-variant: normal;
-        font-size: 2.5rem;
-    }
-
-    #home > div {
-        display: flex;
-        flex-direction: column;
+    footer div p:nth-child(1) {
         margin-top: 2rem;
     }
 
-    img[src="assets/imagens/perfil.png"] {
-        width: 200px;
-        height: 266.6px;
-        border-radius: 150px 150px 150px 50px;
-    }
-
-    #sobre {
-        border-radius: 0;
-        height: 95vh;
-    }
-    
-    .about_perfil {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    } 
-    
-    .about_perfil div p {
-        width: 90vw;
-    }
-    
-    img[src="assets/imagens/perfil2.png"] {
-        border-radius: 100px 10px 10px 10px;
-        width: 300px;
-        height: 300px;
-        border: 10px solid black;
-        padding: 3px;
-    }
-
-    h1 span {
-        color: #CA8179;
+    footer div p span {
         font-size: 2rem;
-        font-variant: small-caps;
-        border-bottom: 5px solid #CA8179;
-    }
-
-    #skills {
-        margin-top: 100px;
-        border-radius: 0;
-        height: 100vh;
-    }
-    
-    #skills h1 {
-        text-align: center;
-        padding: 50px;
-    }
-
-    .skills-progress {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    
-    .skills-progress > div{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #works {
-        margin-top: 100px;
-        border-radius: 0;
-        background-color: white;
-        height: 100vh;
-    }
-    
-    #works h1 {
-        text-align: center;
-        padding: 50px;
-    }
-}
-
-
-@media screen and (min-width:502px) and (max-width:700px){
-    body {
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .nav-button {
-        display: block;
-        border: 0;
-        margin: 8px;
-        cursor: pointer;
-    }
-    
-    .nav-button img {
-        background-color: white;
-        display: flex;
-    }
-
-    .overlay {
-        display: block;
-        width: 0%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.767);
-        z-index: 9;
-        position: fixed;
-        right: -8rem;
-        top: 0;
-        overflow-x: hidden;
-        transition: all .5s;
-        border: 1px solid black;
-    }
-
-    .closebtn {
-        padding: 10px;
-        display: block;
-    }
-
-    .closebtn img {
-        width: 30px;
-        height: 30px;
-        border: 2px solid black;
-        border-radius: 20px;
-    }
-    
-    .navbar {
-        color: black;
-        font-size: 2rem;
-        font-variant: small-caps;
-        margin-top: 3rem;
-    }
-    
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        margin: 0;
-        width: 100vw;
-        background-color: #fff;
-        display: flex;
-        height: 4rem;
-        align-items: center;
-    }
-
-    header div:nth-child(1){
-        margin-left: 1rem;
-    }
-
-    #home {
-        margin-top: 5rem;
-        border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        height: 95vh;
-    }
-
-    #home div h1{
-        order: 0;
-    }
-
-    #home div button{
-        order: 0;
-    }
-
-    #home h1 span {
-        text-shadow: none;
-        font-family: 'Roboto';
-        font-variant: normal;
-        font-size: 2.5rem;
-    }
-
-    #home > div {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-
-    img[src="assets/imagens/perfil.png"] {
-        width: 200px;
-        height: 266.6px;
-        border-radius: 150px 150px 150px 50px;
-    }
-
-    #sobre {
-        border-radius: 0;
-        height: 85vh;
-    }
-    
-    .about_perfil {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    } 
-    
-    .about_perfil div p {
-        width: 90vw;
-    }
-    
-    img[src="assets/imagens/perfil2.png"] {
-        border-radius: 100px 10px 10px 10px;
-        width: 300px;
-        height: 300px;
-        border: 10px solid black;
-        padding: 3px;
-    }
-
-    h1 span {
-        color: #CA8179;
-        font-size: 2rem;
-        font-variant: small-caps;
-        border-bottom: 5px solid #CA8179;
-    }
-
-    #skills {
-        margin-top: 100px;
-        border-radius: 0;
-        height: 90vh;
-    }
-    
-    #skills h1 {
-        text-align: center;
-        padding: 50px;
-    }
-
-    .skills-progress {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }
-    
-    .skills-progress > div{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #works {
-        margin-top: 100px;
-        border-radius: 0;
-        background-color: white;
-        height: 100vh;
-    }
-    
-    #works h1 {
-        text-align: center;
-        padding: 50px;
     }
 }
 
 @media screen and (min-width:702px) and (max-width:1000px){
     body {
-        margin: 3rem 6rem 0rem 6rem;
-        background-color: #F3F8FC;   
-        border-radius: 20px;
-    }
-
-    .nav-button {
-        display: block;
-        border: 0;
-        margin: 8px;
-        cursor: pointer;
-    }
-    
-    .nav-button img {
-        background-color: white;
-        display: flex;
-    }
-
-    .overlay {
-        display: block;
-        width: 0%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.767);
-        z-index: 9;
-        position: fixed;
-        right: -8rem;
-        top: 0;
-        overflow-x: hidden;
-        transition: all .5s;
-        border: 1px solid black;
-    }
-
-    .closebtn {
-        padding: 10px;
-        display: block;
-    }
-
-    .closebtn img {
-        width: 30px;
-        height: 30px;
-        border: 2px solid black;
-        border-radius: 20px;
-    }
-    
-    .navbar {
-        color: black;
-        font-size: 2rem;
-        font-variant: small-caps;
-        margin-top: 3rem;
-    }
-    
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+        margin: 3rem 6rem 0rem;
     }
 
     header {
-        position: fixed;
-        top: 0;
-        margin: 0;
         width: calc(100vw - 12rem);
-        background-color: #fff;
-        display: flex;
-        height: 4rem;
-        align-items: center;
-    }
-
-    header div:nth-child(1){
-        margin-left: 1rem;
     }
 
     #home {
-        margin-top: 5rem;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
-        height: 95vh;
-    }
-
-    #home div h1{
-        order: 0;
-    }
-
-    #home div button{
-        order: 0;
-    }
-
-    #home h1 span {
-        text-shadow: none;
-        font-family: 'Roboto';
-        font-variant: normal;
-        font-size: 2.5rem;
-    }
-
-    #home > div {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-
-    img[src="assets/imagens/perfil.png"] {
-        width: 200px;
-        height: 266.6px;
-        border-radius: 150px 150px 150px 50px;
     }
 
     #sobre {
         border-radius: 10px;
-        height: 85vh;
     }
-    
-    .about_perfil {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 40px;
-    } 
     
     .about_perfil div p {
         width: calc(90vw - 12rem);
     }
-    
-    img[src="assets/imagens/perfil2.png"] {
-        border-radius: 100px 10px 10px 10px;
-        width: 300px;
-        height: 300px;
-        border: 10px solid black;
-        padding: 3px;
-    }
-
-    h1 span {
-        color: #CA8179;
-        font-size: 2rem;
-        font-variant: small-caps;
-        border-bottom: 5px solid #CA8179;
-    }
 
     #skills {
         border-radius: 10px;
-        height: 90vh;
-    }
-
-    .skills-progress {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
     }
     
     .skills-progress > div{
         width: calc(90vw - 12rem);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #works {
-        margin-top: 100px;
-        border-radius: 10px 10px 0 0;
-        background-color: white;
-        height: 100vh;
     }
 }
+
 @media screen and (min-width:1001px) and (max-width:1500px){
     body {
         margin: 3rem 6rem 0rem 6rem;
@@ -1042,14 +515,7 @@ footer a:hover {
     }
 
     header {
-        position: fixed;
-        top: 0;
-        margin: 0;
         width: calc(100vw - 12rem);
-        background-color: #fff;
-        display: flex;
-        height: 4rem;
-        align-items: center;
     }
 
     header div:nth-child(1){
@@ -1062,67 +528,28 @@ footer a:hover {
 
     #home h1 span {
         text-shadow: none;
-        font-family: 'Roboto';
-        font-variant: normal;
         font-size: 2.5rem;
     }
 
     img[src="assets/imagens/perfil.png"] {
         width: 225px;
         height: 300px;
-        border-radius: 150px 150px 150px 50px;
-    }
-
-    #sobre {
-        border-radius: 10px;
-        height: 60vh;
     }
     
     img[src="assets/imagens/perfil2.png"] {
-        border-radius: 100px 10px 10px 10px;
         width: 300px;
         height: 300px;
-        border: 10px solid black;
-        padding: 3px;
     }
 
     h1 span {
-        color: #CA8179;
-        font-size: 2rem;
-        font-variant: small-caps;
-        border-bottom: 5px solid #CA8179;
-    }
-
-    #skills {
-        border-radius: 10px;
-        height: 70vh;
-    }
-
-    #works {
-        margin-top: 100px;
-        border-radius: 10px 10px 0 0;
-        background-color: white;
-        height: 100vh;
+        font-size: 2.5rem;
     }
 }
 
-@media screen and (min-height: 300px) and (max-height: 500px) {
+
+@media screen and (max-height: 550px) {
     #home {
-        height: 160vh;
-    }
-
-    #sobre {
-        height: 160vh;
-    }
-
-    #skills {
-        height: 165vh;
-    }
-}
-
-@media screen and (min-height:501px) and (max-height: 550px) {
-    #home {
-        height: 160vh ;
+        height: 150vh ;
     }
 
     #sobre {
@@ -1130,7 +557,7 @@ footer a:hover {
     }
 
     #skills {
-        height: 165vh;
+        height: 155vh;
     }
 }
 
@@ -1204,9 +631,9 @@ footer a:hover {
     }
 }
 
-@media screen and (min-height:801px) and (max-height: 850px) {
+@media screen and (min-height:801px) and (max-height: 875px) {
     #home {
-        height: 95vh ;
+        height: 100vh ;
     }
 
     #sobre {
