@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
 
+@font-face {
+    font-family: Maiden;
+    src: url(fonts/maiden.ttf);
+}
+
+@font-face {
+    font-family: Guns;
+    src: url(fonts/Corvinus\ Skyline\ ICG.ttf);
+}
+
+@font-face {
+    font-family: Metallica;
+    src: url(fonts/Pastor\ of\ Muppets.TTF);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,7 +42,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 9;
-    width: calc(100vw - 31rem);
+    width: calc(100vw - 32rem);
     background-color: #fff;
     height: 4rem;
     display: flex;
@@ -39,9 +54,9 @@ header {
 
 header div:nth-child(1) {
     margin-left: 3rem;
-    border-radius: 10px 10px 10px 0;
+    /* border-radius: 10px 10px 10px 0;
     display: block;
-    border: 2px solid black;
+    border: 2px solid black; */
 }
 
 .overlay{
@@ -61,7 +76,7 @@ header div:nth-child(1) {
 
 .logo {
     margin-left: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Maiden', sans-serif;
 }
 
 .nav_list {
@@ -88,8 +103,9 @@ header div:nth-child(1) {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    font-size: 3.5rem;
-    font-family: 'Anek Telugu', sans-serif;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    font-family: 'Guns', sans-serif;
     background-color: white;
     height: 75vh;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
@@ -98,18 +114,19 @@ header div:nth-child(1) {
 #home h1 span {
     text-shadow: 1px 1px 10px black;
     color: #CA8179;
-    font-size: 4rem;
-    border-radius: 10px 10px 10px 0px;
-    border: 2px solid transparent;
-    font-family: 'Anek Telugu', sans-serif;
+    font-size: 7rem;
+    border-radius: 50px 10px 50px 0px;
+    border: 1px solid transparent;
+    font-family: 'Metallica', sans-serif;
     font-variant: normal;
 } 
 
 #home span:hover {
-    transition: ease-in-out .7s;
-    border-radius: 10px 10px 10px 0;
-    border: 2px solid black;
+    transition: ease-in-out 2s;
+    border-radius: 7px 0 7px 0;
+    border: 1px solid black;
     cursor: pointer;
+    background: url(imagens/raio.png) no-repeat left;
 }
 
 #home div:nth-child(1) {
@@ -307,7 +324,6 @@ h1 span {
 footer {
     background-color: #CA8179 ;
     height: 100%;
-
 }
 
 footer div {
@@ -319,14 +335,14 @@ footer div {
 
 footer div p:nth-child(1) {
     margin-top: 3rem;
-    border: 2px solid black;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 10px 10px 10px 0;
+    /* border: 2px solid black; */
+    font-family: 'Maiden', sans-serif;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
 }
 
 footer div p span {
     font-size: 3rem;
-    border-radius: 10px 10px 10px 0;
     margin-left: 3rem;
 }
 
@@ -336,6 +352,20 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:701px) {
+    .overlay {
+        display: block;
+        width: 0%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.767);
+        z-index: 9;
+        position: fixed;
+        top: 4rem;
+        overflow-x: hidden;
+        transition: all .5s;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -359,15 +389,14 @@ footer a:hover {
     .overlay {
         display: block;
         width: 0%;
-        height: 100%;
+        height: 0%;
         background-color: rgba(0, 0, 0, 0.767);
         z-index: 9;
         position: fixed;
-        right: -8rem;
-        top: 0;
+        top: 4rem;
+        right: 6rem;
         overflow-x: hidden;
         transition: all .5s;
-        border: 1px solid black;
     }
 
     .closebtn {
@@ -409,14 +438,13 @@ footer a:hover {
         border-radius: 0;
         flex-direction: column;
         justify-content: flex-start;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #home h1 span {
         text-shadow: none;
-        font-family: 'Anek Telugu', sans-serif;
         font-variant: normal;
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     #home > div {
@@ -488,6 +516,13 @@ footer a:hover {
 
     #home {
         border-radius: 10px;
+        font-size: 3rem;
+    }
+
+    #home h1 span {
+        text-shadow: none;
+        font-variant: normal;
+        font-size: 5rem;
     }
 
     #sobre {
@@ -507,7 +542,7 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width:1001px) and (max-width:1500px){
+@media screen and (min-width:1001px){
     body {
         margin: 3rem 6rem 0rem 6rem;
         background-color: #F3F8FC;   
@@ -523,12 +558,12 @@ footer a:hover {
     }
 
     #home {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     #home h1 span {
         text-shadow: none;
-        font-size: 2.5rem;
+        font-size: 5.5rem;
     }
 
     img[src="assets/imagens/perfil.png"] {
