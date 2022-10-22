@@ -6,3 +6,11 @@ function openNav(){
 function closeNav(){
     document.getElementById("myNav").style.width = 0;
 }
+
+if (window.innerWidth < 701) {
+    function openNav(){
+        document.getElementById("myNav").style.width = '100%';
+        document.getElementById("myNav").style.height = '60%';
+        document.getElementById("myNav").style.right = '0';
+    }
+}

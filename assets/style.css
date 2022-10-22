@@ -42,7 +42,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 9;
-    width: calc(100vw - 32rem);
+    width: calc(100vw - 31rem);
     background-color: #fff;
     height: 4rem;
     display: flex;
@@ -54,9 +54,6 @@ header {
 
 header div:nth-child(1) {
     margin-left: 3rem;
-    /* border-radius: 10px 10px 10px 0;
-    display: block;
-    border: 2px solid black; */
 }
 
 .overlay{
@@ -160,6 +157,11 @@ img[src="assets/imagens/perfil.png"] {
     border-radius: 125px 125px 125px 25px;
     border: 2px dashed black;
     padding: 3px;
+    transition: ease-in-out .5s;
+}
+
+img[src="assets/imagens/perfil.png"]:hover {
+    transform: scale(1.05);
 }
 
 .links_media a {
@@ -205,6 +207,11 @@ img[src="assets/imagens/perfil2.png"] {
     width: 400px;
     height: 400px;
     padding: 3px;
+    transition: ease-in-out .5s;
+}
+
+img[src="assets/imagens/perfil2.png"]:hover {
+    transform: scale(1.05);
 }
 
 h1 span {
@@ -313,12 +320,43 @@ h1 span {
     margin-top: 100px;
     border-radius: 10px 10px 0 0;
     background-color: white;
-    height: 75vh;
+    height: 80vh;
 }
 
 #works h1 {
     text-align: center;
     padding: 50px;
+}
+
+.projetos img {
+    width: 320px;
+    height: 180px;
+    border: 2px dashed black;
+    padding: 6px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projetos div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+.projetos img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.projetos div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer {
@@ -542,7 +580,7 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width:1001px){
+@media screen and (min-width:1001px) and (max-width: 1499px){
     body {
         margin: 3rem 6rem 0rem 6rem;
         background-color: #F3F8FC;   
@@ -588,7 +626,7 @@ footer a:hover {
     }
 
     #sobre {
-        height: 155vh;
+        height: 170vh;
     }
 
     #skills {
