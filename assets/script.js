@@ -14,3 +14,4 @@ if (window.innerWidth < 701) {
         document.getElementById("myNav").style.right = '0';
     }
 }
+
