@@ -331,7 +331,7 @@ h1 span {
     margin-top: 100px;
     border-radius: 10px 10px 0 0;
     background-color: white;
-    height: 80vh;
+    height: 85vh;
 }
 
 #works h1 {
@@ -348,7 +348,7 @@ h1 span {
 .slide-content {
     margin: 50px 70px;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     border-bottom: 1px solid black;
 }
   
@@ -381,7 +381,7 @@ h1 span {
     font-size: 1.1rem;
     color: #707070;
     text-align: center;
-    height: 6rem;
+    height: 6.25rem;
     overflow: hidden;
 }
   
@@ -392,7 +392,7 @@ h1 span {
     padding: 10px;
     background-color: #CA8179;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -433,14 +433,20 @@ h1 span {
     }
     
     .button {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .slide-content {
         margin-bottom: 50px;
     }
+}
 
-  }
+@media screen and (min-width:769px) and (max-width: 1000px) {
+
+    .button {
+        margin-top: 20px;
+    }
+}
 
 footer {
     background-color: #CA8179 ;
@@ -700,6 +706,10 @@ footer a:hover {
     #skills {
         height: 155vh;
     }
+
+    #works {
+        height: 125vh;
+    }
 }
 
 @media screen and (min-height:551px) and (max-height: 600px) {
@@ -714,11 +724,15 @@ footer a:hover {
     #skills {
         height: 145vh;
     }
+
+    #works {
+        height: 115vh;
+    }
 }
 
 @media screen and (min-height:601px) and (max-height: 650px) {
     #home {
-        height: 125vh ;
+        height: 130vh ;
     }
 
     #sobre {
@@ -728,6 +742,10 @@ footer a:hover {
     #skills {
         height: 135vh;
     }
+
+    #works {
+        height: 105vh;
+    }
 }
 
 @media screen and (min-height:651px) and (max-height: 700px) {
@@ -736,11 +754,15 @@ footer a:hover {
     }
 
     #sobre {
-        height: 170vh;
+        height: 155vh;
     }
 
     #skills {
         height: 125vh;
+    }
+
+    #works {
+        height: 100vh;
     }
 }
 
@@ -750,11 +772,15 @@ footer a:hover {
     }
 
     #sobre {
-        height: 150vh;
+        height: 145vh;
     }
 
     #skills {
         height: 115vh;
+    }
+
+    #works {
+        height: 90vh;
     }
 }
 
@@ -764,17 +790,21 @@ footer a:hover {
     }
 
     #sobre {
-        height: 150vh;
+        height: 140vh;
     }
 
     #skills {
         height: 110vh;
     }
+
+    #works {
+        height: 90vh;
+    }
 }
 
-@media screen and (min-height:801px) and (max-height: 900px) {
+@media screen and (min-height:801px){
     #home {
-        height: 100vh ;
+        height: 105vh ;
     }
 
     #sobre {
@@ -783,6 +813,24 @@ footer a:hover {
 
     #skills {
         height: 100vh;
+    }
+
+    #works {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-height:801px) and (max-height: 900px) and (min-width:1001px) {
+    #home {
+        height: 90vh ;
+    }
+
+    #sobre {
+        height: 90vh;
+    }
+
+    #skills {
+        height: 80vh;
     }
 }
 
@@ -798,19 +846,9 @@ footer a:hover {
     #skills {
         height: 90vh;
     }
-}
 
-@media screen and (min-height:801px) and (max-height:876px) and (min-width:1001px ){
-    #home {
-        height: 75vh ;
-    }
-
-    #sobre {
-        height: 90vh;
-    }
-
-    #skills {
-        height: 80vh;
+    #works {
+        height: 100vh;
     }
 }
 
@@ -825,5 +863,9 @@ footer a:hover {
 
     #skills {
         height: 100vh;
+    }
+
+    #works {
+        height: 110vh;
     }
 }
