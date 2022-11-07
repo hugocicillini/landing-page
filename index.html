@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
     <title>Portfolio</title>
 </head>
 <body>
@@ -58,7 +60,7 @@
             <h1><span>Sobre</span></h1>
 
             <div class="about_perfil">
-                <img src="assets/imagens/perfil2.png" alt="perfil2">
+                <img src="assets/imagens/perfiel.jpeg" alt="perfil2">
 
                 <div>
                     <h2>Eu sou o Hugo</h2>
@@ -160,17 +162,140 @@
 
         <section id="works">
             <h1><span>Works</span></h1>
-            <!-- <div class="projetos">
-                <div>
-                    <a href="https://hugocicillini.github.io/projeto-cordel/" target="_blank" ><img src="assets/imagens/projeto1.png" alt=""></a>
-                    <a href="https://hugocicillini.github.io/projeto-android/" target="_blank"><img src="assets/imagens/projeto2.png" alt=""></a>
-                    <a href="https://hugocicillini.github.io/cadastro-usuario/" target="_blank"><img src="assets/imagens/projeto3.png" alt=""></a>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/imagens/projeto1.png" alt="" \>  
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">Projeto Cordel</h2>
+                                <p class="description">Meu Primeiro Projeto. Treinando fundamentos básicos de posicionamento de imagens.</p>
+    
+                                <button class="button"><a href="https://hugocicillini.github.io/projeto-cordel/" target="_blank">Ver Projeto</a></button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/imagens/projeto2.png" alt="" />
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">Projeto Android</h2>
+                                <p class="description">Um dos primeiros projetos, treinando responsividade de imagens, vídeos e criação de navbar.</p>
+    
+                                <button class="button"><a href="https://hugocicillini.github.io/projeto-android/" target="_blank">Ver Projeto</a></button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/imagens/projeto3.png" alt="" class="card-img">      
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">Cadastro Usuário</h2>
+                                <p class="description">Página de cadastro, treinando elementos forms, label e input </p>
+    
+                                <button class="button"><a href=""><a href="https://hugocicillini.github.io/cadastro-usuario/" target="_blank">Ver Projeto</a></a></button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">                         
+                                <img src="assets/imagens/projeto4.png" alt="" >                         
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">Relógio Dinâmico</h2>
+                                <p class="description">Criado para treinar fundamentos de objetos de data, seus métodos e propriedades em JavaScript.</p>
+    
+                                <button class="button"><a href="https://hugocicillini.github.io/relogio-dinamico/" target="_blank">Ver Projeto</a></button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">                      
+                                <img src="images/profile5.jpg" alt="" class="card-img">   
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="images/profile6.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="images/profile7.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="images/profile8.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="images/profile9.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://hugocicillini.github.io/relogio-dinamico/" target="_blank"><img src="assets/imagens/projeto4.png" alt=""></a>
-                    <a href="https://github.com/hugocicillini" target="_blank"><img src="assets/imagens/github_pagina.png" alt=""></a>
-                </div>
-            </div> -->
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
     </main>
     <footer>
@@ -178,25 +303,26 @@
             <p><span>hCicillini</span></p>
             <p>&copy; <a href="https://github.com/hugocicillini">hugocicillini</a>  copyright all rights reserved.</p>
         </div>
-    </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/script.js"></script>
-
-    <script>
-        window.sr = ScrollReveal({reset: true});
-        sr.reveal('.links_media', {duration: 1000});
-        sr.reveal('#skills', {
-            rotate: {x:10, y:10, z:0},
-            duration: 1000,
-            });
-        sr.reveal('#sobre', {
-            rotate: {x:10, y:10, z:0},
-            duration: 1000,
-            });
-        sr.reveal('#works', {
-            rotate: {x:10, y:10, z:0},
-            duration: 1000});
-    </script>
+    </footer> 
 </body>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    window.sr = ScrollReveal({reset: true});
+    sr.reveal('.links_media', {duration: 1000});
+    sr.reveal('#skills', {
+        rotate: {x:10, y:10, z:0},
+        duration: 1000,
+        });
+    sr.reveal('#sobre', {
+        rotate: {x:10, y:10, z:0},
+        duration: 1000,
+        });
+    sr.reveal('#works', {
+        rotate: {x:10, y:10, z:0},
+        duration: 1000});
+</script>
+
+<script src="assets/script.js"></script>
 </html>

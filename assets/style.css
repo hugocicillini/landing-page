@@ -137,6 +137,7 @@ header div:nth-child(1) {
     background-color: #000000;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
 }
 
 #home button:hover {
@@ -192,25 +193,30 @@ img[src="assets/imagens/perfil.png"]:hover {
 .about_perfil div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 15px;
+}
+
+.about_perfil strong {
+    color: black;
 }
 
 .about_perfil div p {
+    color: #707070;
     text-indent: 2rem;
     text-align: justify;
     width: 30vw;
 }
 
-img[src="assets/imagens/perfil2.png"] {
+img[src="assets/imagens/perfiel.jpeg"] {
     border-radius: 125px 125px 125px 25px;
     border: 2px solid black;
-    width: 400px;
+    width: 300px;
     height: 400px;
     padding: 3px;
     transition: ease-in-out .5s;
 }
 
-img[src="assets/imagens/perfil2.png"]:hover {
+img[src="assets/imagens/perfiel.jpeg"]:hover {
     transform: scale(1.05);
 }
 
@@ -249,6 +255,10 @@ h1 span {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.skills-progress > div:nth-child(1) > p {
+    color: #707070;
 }
 
 .percent p {
@@ -326,39 +336,102 @@ h1 span {
 
 #works h1 {
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 
-.projetos img {
-    width: 320px;
-    height: 180px;
-    border: 2px dashed black;
-    padding: 6px;
+.slide-container {
+    max-width: 80vw;
+    width: 100%;
+    padding: 40px 0;
 }
-
-.projetos {
+  
+.slide-content {
+    margin: 50px 70px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+  
+.image-content,
+.card-content {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.projetos div:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 3rem;
+.image-content {
+    border: 1px solid black;
+    padding: 3px;
 }
 
-.projetos img:hover {
-    transform: scale(1.1);
-    transition: .5s;
+.image-content {
+    margin: 20px 0 40px;
+}
+  
+.image-content img {
+    width: 100%;
+    height: 100%
+}
+  
+.name {
+    font-size: 1.4rem;
+}
+  
+.description {
+    font-size: 1.1rem;
+    color: #707070;
+    text-align: center;
+    height: 6rem;
+    overflow: hidden;
+}
+  
+.button {
+    border: none;
+    font-size: 1.2rem;
+    color: #FFF;
+    padding: 10px;
+    background-color: #CA8179;
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.button:hover {
+    background: #c55a4ed5;
 }
 
-.projetos div:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.button a {
+    color: black;
+    font-family: 'Anek Telugu';
+    padding: 10px;
 }
+
+.swiper-navBtn{
+    --swiper-theme-color: #000408;
+    transition: color 0.3s ease;
+    background-color: #ca817956;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 16px !important;
+} 
+
+.swiper-pagination-bullet-active{
+    --swiper-theme-color: #000000;
+} 
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+      margin: 0 10px;
+    }
+    .swiper-navBtn {
+      display: none !important;
+    }
+  }
 
 footer {
     background-color: #CA8179 ;
@@ -640,7 +713,7 @@ footer a:hover {
     }
 
     #sobre {
-        height: 150vh;
+        height: 170vh;
     }
 
     #skills {
@@ -654,7 +727,7 @@ footer a:hover {
     }
 
     #sobre {
-        height: 140vh;
+        height: 170vh;
     }
 
     #skills {
@@ -668,7 +741,7 @@ footer a:hover {
     }
 
     #sobre {
-        height: 130vh;
+        height: 150vh;
     }
 
     #skills {
@@ -682,7 +755,7 @@ footer a:hover {
     }
 
     #sobre {
-        height: 120vh;
+        height: 150vh;
     }
 
     #skills {
@@ -690,13 +763,13 @@ footer a:hover {
     }
 }
 
-@media screen and (min-height:801px) and (max-height: 875px) {
+@media screen and (min-height:801px) and (max-height: 900px) {
     #home {
         height: 100vh ;
     }
 
     #sobre {
-        height: 110vh;
+        height: 140vh;
     }
 
     #skills {
