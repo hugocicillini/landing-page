@@ -431,6 +431,15 @@ h1 span {
     .swiper-navBtn {
       display: none !important;
     }
+    
+    .button {
+        margin-top: 0px;
+    }
+
+    .slide-content {
+        margin-bottom: 50px;
+    }
+
   }
 
 footer {
