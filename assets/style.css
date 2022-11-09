@@ -42,7 +42,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 9;
-    width: calc(100vw - 30rem);
+    width: calc(100vw - 31rem);
     background-color: #fff;
     height: 4rem;
     display: flex;
